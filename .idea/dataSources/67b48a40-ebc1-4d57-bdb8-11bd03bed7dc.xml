@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="leadnews-history@192.168.200.130">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.53">
+    <root id="1">
+      <ServerVersion>4.2.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="config"/>
+    <schema id="4" parent="1" name="leadnews-comment"/>
+    <schema id="5" parent="1" name="leadnews-history">
+      <Current>1</Current>
+      <LastIntrospectionLocalTimestamp>2025-08-12.08:28:11</LastIntrospectionLocalTimestamp>
+    </schema>
+    <schema id="6" parent="1" name="local"/>
+    <table id="7" parent="5" name="ap_associate_words"/>
+    <table id="8" parent="5" name="ap_user_search"/>
+    <column id="9" parent="7" name="_id">
+      <Position>1</Position>
+      <StoredType>ObjectId|12s</StoredType>
+    </column>
+    <column id="10" parent="7" name="associateWords">
+      <Position>1</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="11" parent="7" name="_class">
+      <Position>2</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="12" parent="7" name="createdTime">
+      <Position>2</Position>
+      <StoredType>ISODate|91s</StoredType>
+    </column>
+    <column id="13" parent="8" name="_id">
+      <Position>1</Position>
+      <StoredType>ObjectId|12s</StoredType>
+    </column>
+    <column id="14" parent="8" name="_class">
+      <Position>1</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="15" parent="8" name="createdTime">
+      <Position>1</Position>
+      <StoredType>ISODate|91s</StoredType>
+    </column>
+    <column id="16" parent="8" name="keyword">
+      <Position>2</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="17" parent="8" name="userId">
+      <Position>3</Position>
+      <StoredType>Int32|4s</StoredType>
+    </column>
+  </database-model>
+</dataSource>

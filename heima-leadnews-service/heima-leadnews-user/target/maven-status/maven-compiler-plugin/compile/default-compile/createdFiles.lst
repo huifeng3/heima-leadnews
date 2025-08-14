@@ -1,0 +1,16 @@
+com\heima\user\UserApplication.class
+com\heima\user\config\WebMvcConfig.class
+com\heima\user\controller\v1\ApUserLoginController.class
+com\heima\user\service\UserAuthService.class
+com\heima\user\service\impl\UserFollowServiceImpl.class
+com\heima\user\controller\v1\UserAuthController.class
+com\heima\user\interceptor\AppTokenInterceptor.class
+com\heima\user\mapper\ApUserRealnameMapper.class
+com\heima\user\feign\UserClient.class
+com\heima\user\service\impl\ApUserServiceImpl.class
+com\heima\user\service\impl\UserAuthServiceImpl.class
+com\heima\user\service\UserFollowService.class
+com\heima\user\service\ApUserService.class
+com\heima\user\controller\v1\UserFollowController.class
+com\heima\user\mapper\ApUserMapper.class
+com\heima\user\mapper\UserAuthMapper.class
