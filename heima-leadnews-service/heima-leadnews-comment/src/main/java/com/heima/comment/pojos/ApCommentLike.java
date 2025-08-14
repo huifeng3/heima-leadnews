@@ -24,10 +24,10 @@ public class ApCommentLike {
      * 评论id
      */
     private String commentId;
-
-    /**
-     * 0：点赞
-     * 1：取消点赞
-     */
-    private Short operation;
+//
+//    /**
+//     * 0：点赞
+//     * 1：取消点赞
+//     */
+//    private Short operation;
 }

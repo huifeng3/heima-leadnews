@@ -7,7 +7,6 @@ import com.heima.model.search.dtos.UserSearchDto;
 import com.heima.model.user.pojos.ApUser;
 import com.heima.search.service.ApUserSearchService;
 import com.heima.search.service.ArticleSearchService;
-//import com.heima.utils.thread.AppThreadLocalUtil;
 import com.heima.utils.thread.AppThreadLocalUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
