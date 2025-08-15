@@ -151,7 +151,11 @@ public class ArticleCommentServiceImpl implements ArticleCommentService {
         }
 
         //获取用户 id
-        Integer userId = AppThreadLocalUtil.getUser().getId();
+        ApUser user = AppThreadLocalUtil.getUser();
+        if(user == null){
+            return ResponseResult.errorResult(AppHttpCodeEnum.NEED_LOGIN);
+        }
+        Integer userId = user.getId();
 
         Query apCommentQuery = new Query();
         apCommentQuery.addCriteria(Criteria.where("id").is(dto.getCommentId()));
